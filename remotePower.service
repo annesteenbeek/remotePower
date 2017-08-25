@@ -1,0 +1,12 @@
+[Unit]
+Description=Network power manager for server
+After=multi-user.target
+
+[Service]
+Type=simple
+User=anne
+Group=anne
+ExecStart=/usr/bin/python /home/anne/netwake/remotePower.py
+
+[Install]
+WantedBy=multi-user.target
